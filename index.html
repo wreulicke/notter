@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notter</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+  html, body {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  #container {
+    padding: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    width: 100%;
+    height: 100%;
+  }
+  .post {
+    /* box-sizing: border-box; */
+    padding: 0;
+  }
+  @media (max-width: 480px) {
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    .post {
+      height: 5em;
+      right: 1em;
+      width: calc(100% - 2em - 2px);
+    }
+  }
+  @media (min-width: 480px) {
+    body {
+      width: 100%;
+    }
+    .post {
+      width: 40em;
+      right: 1em;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+</html>
